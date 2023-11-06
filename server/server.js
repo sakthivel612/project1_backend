@@ -3,11 +3,14 @@ const mongoose = require("mongoose");
 const Document = require("./models/Document");
 
 mongoose
-  .connect("mongodb://localhost:27017/google-docs", {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useFindAndModify: false,
-  })
+  .connect(
+    "mongodb+srv://Sakthivel:Sakthivel612@cluster0.e915zlr.mongodb.net/google-docs?retryWrites=true&w=majority",
+    {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+      useFindAndModify: false,
+    }
+  )
   .then((db) => {
     console.log("DB connected");
   })
