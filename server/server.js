@@ -20,7 +20,7 @@ mongoose
 
 const io = require("socket.io")(5000, {
   cors: {
-    origin: "http://localhost:3000",
+    origin: "https://master--soft-longma-7a4763.netlify.app/",
     methods: ["GET", "POST"],
   },
 });
