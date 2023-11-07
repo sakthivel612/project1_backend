@@ -1,6 +1,12 @@
-// const express = require("express");
+const express = require("express");
 const mongoose = require("mongoose");
 const Document = require("./models/Document");
+
+const app = express();
+
+app.get("/", (req, res) => {
+  return res.send({ message: "server is running" });
+});
 
 mongoose
   .connect(
